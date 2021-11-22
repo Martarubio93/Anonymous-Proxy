@@ -1,0 +1,48 @@
+.tips {
+  align-items: center;
+  padding: 30px 15px 45px;
+  &__small {
+    color: $Lightblue;
+    width: 90px;
+    height: 30px;
+    margin: 0 200px 1px 0;
+    font-family: $font-main;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+
+  &__title {
+    margin: 1px 0 15px;
+    font-family: "Roboto Slab", serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: $colorBlack;
+    width: 290px;
+    height: 60px;
+
+    &--text {
+      font-size: $font-main;
+      font-size: 18px;
+      line-height: 1.67;
+      color: $Textgrey;
+    }
+  }
+}
+
+.Gobutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $Buttoncolor;
+  border: 2px solid $Buttoncolor;
+  width: 80px;
+  height: 40px;
+  margin: 30px 214px 0 0;
+  padding: 0 25px 0 26px;
+  border-radius: 40.5px;
+  font-weight: bold;
+   
+}

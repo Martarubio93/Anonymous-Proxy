@@ -1,0 +1,26 @@
+.arrowup {
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 150px;
+}
+
+.footer {
+  height: 465px;
+  background-color: $Darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    color: $Maintext;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
