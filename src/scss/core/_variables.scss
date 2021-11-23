@@ -2,6 +2,9 @@
 $font-main: "Roboto", sans-serif;
 $font-bold: "Roboto Slab", serif;
 
+
+
+
 // colors
 $Darkblue: #304268;
 $colorBlack: #000000;
@@ -10,4 +13,18 @@ $Maintext: white;
 $Lightblue: #8ccbea;
 $Textgrey: #4a4a4a;
 $Buttoncolor: #f26002;
-$Iceblue: #eff9ff;
+$iceBlue: #eff9ff;
+
+//MIXINS
+
+@mixin footer-list{display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 7px;
+}
+
+@mixin footer-link{
+    color: $Maintext;
+    text-decoration: none;
+    text-transform: uppercase;}

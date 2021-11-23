@@ -6,21 +6,119 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  bottom: 150px;
+  transform: translateY(-50px);
+  box-shadow: 10px 20px 100px $Darkblue;
+  @media all and (min-width: 768px) {
+    transform: translateY(-125px);
+  }
 }
 
 .footer {
-  height: 465px;
+  height: 500px;
   background-color: $Darkblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px) {
+    height: 700px;
+  }
+}
 
-  &__link {
+.firstnav {
+  width: 73px;
+  height: 150px;
+  margin-bottom: 40px;
+  @media all and (min-width: 768px) {
+    transform: translateY(-50%);
+    height: 200px;
+    width: 210px;
+    margin-left: 279px;
+    margin-right: 279px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    @media all and (min-width: 768px) {
+      display: inline-block;
+      margin-right: 100px;
+    }
+
+    &--link {
+      color: $Maintext;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.secondnav {
+  height: 90px;
+  width: 147px;
+  @media all and (min-width: 768px) {
+    transform: translateY(-340px);
+    margin-left: 400px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    @media all and (min-width: 768px) {
+      display: inline-block;
+    }
+
+    &--link {
+      color: $Maintext;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  @media all and (min-width: 768px) {
+    transform: translateY(-495px);
+    margin-right: 500px;
+  }
+
+  &__year {
+    font-size: 14px;
+    height: 20px;
+    width: 77px;
+    text-align: center;
     color: $Maintext;
-    text-decoration: none;
-    text-transform: uppercase;
+    font-size: 14px;
+    @media all and (min-width:768px){
+      height: 30px;
+      width: 210px;
+      display: flex;
+    }
+  }
+
+  &__components {
+    color: $Maintext;
+    text-align: center;
+    font-size: 14px;
+    width: 290px;
+    height: 30px;
+    @media all and (min-width:768px){
+      height: 30px;
+      width: 210px;
+      display: flex;}
+
+    &--heart {
+      padding: 3px;
+      color: $Buttoncolor;
+    }
   }
 }

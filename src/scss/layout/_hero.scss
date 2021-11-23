@@ -1,5 +1,6 @@
 .hero {
   height: 100vh;
+  width: 100%;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
@@ -16,23 +17,36 @@
     height: 110px;
     font-weight: bold;
     margin: 240px 0 10px 15px;
-    word-wrap: break-word;
     color: $Maintext;
-  
-        &--text {width: 290px;
-            height: 21px;
-            margin: 10px 0 45px 15px;
-            font-family: $font-main;
-            font-size: 16px;
-            text-align: center;
-            color: $Maintext;
-        }
-  }
-}
+    @media (min-width: 768px) {
+      width: 690px;
+      height: 212px;
+      font-size: 88px;
+      margin-top: 500px;
+    }
 
-.arrowdown{background-color: $Maintext;
-width: 45px;
-height: 45px;
-border-radius: 50%;
-padding: 18px 12px 15.3px 13px;
- }
+    &--text {
+      width: 290px;
+      height: 21px;
+      margin: 10px 0 45px 15px;
+      font-family: $font-main;
+      font-size: 16px;
+      text-align: center;
+      color: $Maintext;
+      @media (min-width: 768px) {
+        width: 360px;
+        height: 32px;
+        font-size: 24px;}
+    
+      }
+    }
+  }
+
+
+.arrowdown {
+  background-color: $Maintext;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 18px 12px 15.3px 13px;
+}
