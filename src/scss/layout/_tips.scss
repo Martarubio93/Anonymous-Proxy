@@ -1,11 +1,14 @@
 .tips {
+  width: 100%;
   align-items: center;
   padding: 30px 15px 45px;
+ 
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
+    width: 100%;
     margin-left: 39px;
     margin-right: 39px;
-    height: 300px;
+    object-fit: contain;
     
   }
 
@@ -26,7 +29,7 @@
     font-weight: bold;
     line-height: 1.25;
     color: $colorBlack;
-    width: 290px;
+    width: 280px;
     height: 60px;
 
     &--text {
@@ -34,6 +37,9 @@
       font-size: 18px;
       line-height: 1.67;
       color: $Textgrey;
+      
+    @media all and (min-width: 760px) {
+    width: 500px;}
     }
   }
 }

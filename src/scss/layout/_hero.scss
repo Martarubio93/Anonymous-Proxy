@@ -9,6 +9,9 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  @media (min-width: 768px) {
+    background-blend-mode: multiply;
+  }
 
   &__title {
     font-family: $font-bold;
@@ -21,8 +24,10 @@
     @media (min-width: 768px) {
       width: 690px;
       height: 212px;
-      font-size: 88px;
+      font-size: 80px;
       margin-top: 500px;
+      transform: translateY(-80%);
+      
     }
 
     &--text {
@@ -36,12 +41,12 @@
       @media (min-width: 768px) {
         width: 360px;
         height: 32px;
-        font-size: 24px;}
-    
+        font-size: 24px;
+        transform: translateY(-550%);
       }
     }
   }
-
+}
 
 .arrowdown {
   background-color: $Maintext;
@@ -49,4 +54,7 @@
   height: 45px;
   border-radius: 50%;
   padding: 18px 12px 15.3px 13px;
+  @media (min-width: 768px){
+    transform: translateY(-400%);
+  }
 }

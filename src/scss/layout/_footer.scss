@@ -1,3 +1,16 @@
+.footer {
+  height: 465px;
+  width: 100%;
+  background-color: $Darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    height: 240px;
+  }
+}
+
 .arrowup {
   background-color: white;
   width: 45px;
@@ -9,19 +22,7 @@
   transform: translateY(-50px);
   box-shadow: 10px 20px 100px $Darkblue;
   @media all and (min-width: 768px) {
-    transform: translateY(-125px);
-  }
-}
-
-.footer {
-  height: 500px;
-  background-color: $Darkblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @media all and (min-width: 768px) {
-    height: 700px;
+    transform: translateY(100px);
   }
 }
 
@@ -29,12 +30,12 @@
   width: 73px;
   height: 150px;
   margin-bottom: 40px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   @media all and (min-width: 768px) {
-    transform: translateY(-50%);
-    height: 200px;
-    width: 210px;
-    margin-left: 279px;
-    margin-right: 279px;
+    transform: translateY(130px);
+    margin-left: 0px;
   }
 
   &__list {
@@ -43,10 +44,8 @@
     align-items: center;
     padding: 7px;
     @media all and (min-width: 768px) {
-      display: inline-block;
-      margin-right: 100px;
+      display: inline-flex;
     }
-
     &--link {
       color: $Maintext;
       text-decoration: none;
@@ -59,8 +58,8 @@
   height: 90px;
   width: 147px;
   @media all and (min-width: 768px) {
-    transform: translateY(-340px);
-    margin-left: 400px;
+    transform: translate(200px);
+    margin-bottom: 40px;
   }
 
   &__list {
@@ -87,8 +86,8 @@
   align-items: center;
   margin-top: 70px;
   @media all and (min-width: 768px) {
-    transform: translateY(-495px);
-    margin-right: 500px;
+    transform: translateY(-250px);
+    margin-right: 560px;
   }
 
   &__year {
@@ -98,11 +97,6 @@
     text-align: center;
     color: $Maintext;
     font-size: 14px;
-    @media all and (min-width:768px){
-      height: 30px;
-      width: 210px;
-      display: flex;
-    }
   }
 
   &__components {
@@ -111,10 +105,6 @@
     font-size: 14px;
     width: 290px;
     height: 30px;
-    @media all and (min-width:768px){
-      height: 30px;
-      width: 210px;
-      display: flex;}
 
     &--heart {
       padding: 3px;
