@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  width: 100%;
+  max-width: 100%;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
@@ -9,9 +9,6 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  @media (min-width: 768px) {
-    background-blend-mode: multiply;
-  }
 
   &__title {
     font-family: $font-bold;
@@ -24,12 +21,12 @@
     @media (min-width: 768px) {
       width: 690px;
       height: 212px;
+      align-items: center;
       font-size: 80px;
       margin-top: 500px;
       transform: translateY(-80%);
       @media (min-width: 1200px) {
         font-size: 100px;
-        margin-right: 100px;
       }
     }
 
@@ -39,8 +36,8 @@
       margin: 10px 0 45px 15px;
       font-family: $font-main;
       font-size: 16px;
-      text-align: center;
       color: $Maintext;
+      align-items: center;
       @media (min-width: 768px) {
         width: 360px;
         height: 32px;
@@ -48,7 +45,6 @@
         transform: translateY(-550%);
         @media (min-width: 1200px) {
           margin-top: 70px;
-          margin-right: 100px;
         }
       }
     }
@@ -56,6 +52,7 @@
 }
 
 .arrowdown {
+  align-items: center;
   background-color: $Maintext;
   width: 45px;
   height: 45px;
@@ -64,8 +61,7 @@
   @media (min-width: 768px) {
     transform: translateY(-400%);
     @media (min-width: 1200px) {
-      transform: translateY(-350%);
-      margin-right: 100px;
+      transform: translateY(-370%);
     }
   }
 }
