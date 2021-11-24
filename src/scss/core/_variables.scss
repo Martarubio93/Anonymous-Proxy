@@ -12,3 +12,24 @@ $Textgrey: #4a4a4a;
 $Buttoncolor: #f26002;
 $iceBlue: #eff9ff;
 
+//Mixins
+@mixin footer-nav {
+  display: flex;
+  flex-direction: column;
+  @media all and (min-width: 768px) {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+@mixin footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7px;
+  color: $Maintext;
+  text-decoration: none;
+  text-transform: uppercase;
+}
