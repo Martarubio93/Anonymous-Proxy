@@ -1,19 +1,20 @@
 .reasons {
   width: 100%;
+  height: 700px;
   background-color: $iceBlue;
   font-family: "Roboto Slab", serif;
   display: grid;
   text-align: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  @media all and (min-width: 760px) {
-    
+  @media all and (min-width: 768px) {
     width: 100%;
     height: 400px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    
-   
+    @media all and (min-width: 768px) {
+      height: 500px;
+    }
   }
 
   &__title {
@@ -22,17 +23,20 @@
     font-size: 24px;
     line-height: 30px;
     grid-row: 1/2;
-    @media all and (min-width: 760px) {
+    @media all and (min-width: 768px) {
       font-size: 26px;
       grid-column: 2/3;
       grid-row: 1/4;
+      @media all and (min-width: 1200px) {
+        font-size: 35px;
+      }
     }
   }
 
   &__item1 {
     font-family: $font-bold;
     grid-row: 2/3;
-    @media all and (min-width: 760px) {
+    @media all and (min-width: 768px) {
       grid-column: 1/2;
       grid-row: 2/3;
     }
@@ -41,7 +45,7 @@
   &__item2 {
     font-family: $font-bold;
     grid-row: 3/4;
-    @media all and (min-width: 760px) {
+    @media all and (min-width: 768px) {
       grid-column: 2/3;
       grid-row: 2/3;
     }
@@ -50,7 +54,7 @@
   &__item3 {
     font-family: $font-bold;
     grid-row: 4/5;
-    @media all and (min-width: 760px) {
+    @media all and (min-width: 768px) {
       grid-column: 3/3;
       grid-row: 2/3;
     }
@@ -59,29 +63,38 @@
   &__item4 {
     font-family: $font-bold;
     grid-row: 5/6;
-    @media all and (min-width: 760px) {
+    @media all and (min-width: 768px) {
       grid-column: 2/3;
       grid-row: 3/4;
     }
   }
 }
 
-.reasons__h3 {
+.reasonsname {
   font-family: $font-bold;
   font-size: 18px;
-  @media all and (min-width: 760px) {
+  margin: 18px;
+  @media all and (min-width: 768px) {
     height: 30px;
     align-items: center;
     font-size: 24px;
+    @media all and (min-width: 1200px) {
+      font-size: 30px;
+    }
   }
 }
 
-.reasons__text {
+.reasonstext {
+  width: 200px;
   font-family: $font-main;
   font-size: 18px;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-
+  @media all and (min-width: 1200px) {
+    width: 300px;
+    font-size: 25px;
+  }
 }
 
 .reasonsbutton {
@@ -94,9 +107,14 @@
   margin: 45px 53px 0;
   padding: 0 29.5px 0 30.5px;
   border-radius: 22.5px;
-  transform: translateY(-50px);
+  transform: translateY(-30px);
   transition: all ease 1s;
- 
+  @media all and (min-width: 1200px) {
+    width: 280px;
+    height: 50px;
+    font-size: 25px;
+    transform: translateY(-15px);
+  }
 
   &:hover {
     background-color: $Darkblue;
