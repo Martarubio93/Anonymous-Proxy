@@ -97,18 +97,19 @@
 }
 
 .reasonsbutton {
-  background-color: $Buttoncolor;
-  border: none;
-  color: $Maintext;
+  background-color: white;
+  border: 3px solid $Buttoncolor;
+  color: $Buttoncolor;
+  font-weight: bold;
   font-size: 20px;
   width: 184px;
-  height: 45px;
-  margin: 45px 53px 0;
-  padding: 0 29.5px 0 30.5px;
+  height: 40px;
+  margin: 65px 53px 0;
   border-radius: 22.5px;
   transform: translateY(-30px);
   transition: all ease 1s;
   @media all and (min-width: 1200px) {
+    margin: 45px 53px 0;
     width: 280px;
     height: 50px;
     font-size: 25px;

@@ -2,31 +2,39 @@
   height: 500px;
   width: 100%;
   background-color: $Darkblue;
-  @media all and (min-width: 768px) {
-    height: 280px;
+  &__img {
+    display: none;
+
   }
 
-  &__arrowup {
-    background-color: white;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    transform: translateY(-20px);
-    animation-name: arrow;
-    animation-iteration-count: 3;
-    animation-duration: 3s;
+  @media all and (min-width: 768px) {
 
-    @keyframes arrow {
-      0% {
-        transform: translateY(200px);
-      }
+    height: 280px;
+    &__img {
+      display: flex;
+    }
+    &__arrowup {
+      background-color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      transform: translateY(-20px);
+      animation-name: arrow;
+      animation-iteration-count: 3;
+      animation-duration: 3s;
 
-      100% {
-        transform: translateY(-100);
+      @keyframes arrow {
+        0% {
+          transform: translateY(200px);
+        }
+
+        100% {
+          transform: translateY(-100);
+        }
       }
     }
 
@@ -106,6 +114,7 @@
     font-size: 14px;
     @media all and (min-width: 768px) {
       display: flex;
+      order: 2;
       padding-left: 50px;
       font-size: 16px;
     }
@@ -118,6 +127,7 @@
     width: 290px;
     height: 30px;
     @media all and (min-width: 768px) {
+      order: 1;
       display: flex;
       padding-left: 50px;
       font-size: 16px;
