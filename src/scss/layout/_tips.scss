@@ -12,14 +12,14 @@
     padding-top: 70px;
   }
 
-  &__small {
+  &__smalltitle {
     color: $Lightblue;
-    width: 90px;
     height: 30px;
     margin: 0 200px 1px 0;
     font-family: $font-main;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 2.14;
+    text-transform: capitalize;
     @media all and (min-width: 1200px) {
       font-size: 18px;
     }
