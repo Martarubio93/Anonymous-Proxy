@@ -1,6 +1,6 @@
 ## Anonymous-Proxy
 
-The exercise consists in creating a responsive web page using simple animations and transitions
+The exercise consists in creating a responsive web page using simple animations and transitions.
 
 ## Tech Stack
 
